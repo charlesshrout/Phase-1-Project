@@ -14,10 +14,8 @@ const fetchReq1 = fetch ("http://localhost:3000/data")
     strainArray.forEach(strain => {
         buildMenu(strain)
     })
+    strainDetails(strainArray[0])
 })
-
-
-
 
 
 function buildMenu(strain){
