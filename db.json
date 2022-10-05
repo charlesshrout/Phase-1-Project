@@ -1,0 +1,70 @@
+{
+"data": [
+    {
+        "name": "Dirty Cookies",
+        "image": "./Assets/dirty cookies .jpeg",
+        "number_in_bag": 0,
+        "price": 100,
+        "lineage": {
+            "Afghanistan": "AF",
+            "South Africa": "ZA"
+        }
+        
+    },
+    {
+        "name": "Doctor Cookies",
+        "image": "./assets/monstor cookies .jpeg",
+        "number_in_bag": 0,
+        "price": 100,
+        "lineage": {
+            "Afghanistan": "AF",
+            "Colombia": "CO",
+            "India": "IN",
+            "Mexico": "MX",
+            "South Africa": "ZA",
+            "Thailand": "TH",
+            "United States": "US"
+        }
+       
+    },
+    {
+        "name": "Electric Mayhem",
+        "image": "https://www.cannabisreports.com/images/strains/no_image.png",
+        "number_in_bag": 0,
+        "price": 100,
+        "lineage": {
+            "Afghanistan": "AF",
+            "Brazil": "BR",
+            "Colombia": "CO",
+            "India": "IN",
+            "Mexico": "MX",
+            "Thailand": "TH",
+            "Ukraine": "UA"
+        }
+       
+    },
+    {
+        "name": "My Friend Jack",
+        "image": "https://www.cannabisreports.com/images/strains/no_image.png",
+        "number_in_bag": 0,
+        "price": 100,
+        "lineage": {
+            "Afghanistan": "AF"
+        }
+       
+    },
+    {
+        "name": "Sour Cat",
+        "image": "https://www.cannabisreports.com/images/strains/no_image.png",
+        "number_in_bag": 0,
+        "price": 100,
+        "lineage": {
+            "Afghanistan": "AF",
+            "Mexico": "MX",
+            "United States": "US"
+        }
+        
+    }
+]
+
+}

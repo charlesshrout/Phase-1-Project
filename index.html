@@ -1,1 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script defer src="./index.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/logo.jpeg"/>
+    </head>
+    <body class="background">
+       <header>
+           <img src="./assets/logo.jpeg" />
+           <img src="./assets/dispo logo .png"/>
+       </header>
+       <div id="container">
+            <section id="menu">
+                <h2>Menu</h2>
+                <div id="strain-items">
+                    
+                    <!-- Add your menu items here! -->
+                </div>
+            </section>
 
+            <section id="strain">
+                <!-- All the Strain details are in here! -->
+                <img id="strain-image" src=""/>
+                <div id="strain-text">
+                    <h3 id="strain-name"></h3>
+                    <p id="strain-description"></p>
+                    <h3 id="strain-price"></h3>
+                </div>
+                
+                <h3>
+                    Number in Cart: 
+                    <span id="number-in-cart">0</span>
+                </h3>
+                <form id="cart-form">
+                    <input id="cart-amount" type="text" placeholder="Number to add..."/>
+                    <input type="submit" value="Add to Cart"></input>
+                </form>
+                
+            </section>
+        </div>
+    </body>
+</html>
