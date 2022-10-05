@@ -15,10 +15,12 @@ const fetchReq1 = fetch ("http://localhost:3000/data")
         buildMenu(strain)
     })
     strainDetails(strainArray[0])
+    setupCart()
 })
 
 
 function buildMenu(strain){
+    currentStrain = strain 
     const span = document.createElement('span')
     span.addEventListener('click', () => 
     strainDetails(strain))
@@ -31,16 +33,14 @@ function strainDetails(strain){
     strainLineage.textContent = strain.lineage
     strainImage.src = strain.image
     strainPrice.textContent = `$${(strain.price) + " per Oz"}`
-    numberInCart.textContent = strain.number_in_bag
-
 }
 
 function setupCart() {
     let addToCartForm = document.querySelector("#cart-form")
     addToCartForm.addEventListener('submit', (event) => {
         event.preventDefault();
-        currentDish.number_in_bag += parseInt(event.target["cart-amount"].value);
-        strainDish(currentDish);
+        currentStrain.number_in_bag += parseInt(event.target["cart-amount"].value);
+        numberInCart.textContent = currentStrain.number_in_bag
         addToCartForm.reset();
     });
 }

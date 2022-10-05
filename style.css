@@ -1,6 +1,6 @@
 .background {
     background:
-    url(assets/background.jpeg);
+    url(Assets/background.jpg);
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -76,15 +76,25 @@ header img {
 
 #strain-text {
     text-align: center;
-    margin: center;
     position: center;
     top: 15px;
     margin-left: 10px;
     margin-top: 10px;
     padding: 10px;
-    width: 30%;
+    width: 90%;
     height: auto;
     background-color: rgb(255, 255, 255);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    border: 1px solid rgba(59,58,58,0.46);
+    border-radius: 20px;
+    box-shadow: -10px 5px 10px;
+    top: 0;
+    transition: top ease 0.5s;
 }
 
 #strain-name {

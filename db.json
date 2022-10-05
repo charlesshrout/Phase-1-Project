@@ -3,59 +3,46 @@
     {
         "name": "Dirty Cookies",
 
-        "image": "./Assets/dirty cookies .jpeg",
+        "image": "https://media2.giphy.com/media/ZyljOaa1h8CtO/giphy.gif?cid=790b76111ec0be013e868f4844551560a5139122e83ec11f&rid=giphy.gif&ct=g",
         "number_in_bag": 0,
         "price": 100,
-        "lineage": "From: Afghanistan, South Africa"
+        "lineage": "From: Afghanistan x South Africa"
             
         
     },
     {
         "name": "Doctor Cookies",
 
-        "image": "./assets/monstor cookies .jpeg",
+        "image": "https://media4.giphy.com/media/l4FGjieS6tO8LZw1W/giphy.gif?cid=ecf05e47cetwabeohpjit0h7uc757vnt0iad6r0i31aaa05o&rid=giphy.gif&ct=g",
         "number_in_bag": 0,
         "price": 100,
-        "lineage": "From: "
+        "lineage": "From: India x South Africa"
             
     },
     {
         "name": "Electric Mayhem",
-        "image": "https://www.cannabisreports.com/images/strains/no_image.png",
+
+        "image": "https://media1.giphy.com/media/26xBzhls2a4Gw9U6Q/giphy.gif?cid=ecf05e476f8d6w42w6o3hpsizbu7zgjrpsnx55qrq5k2tpbw&rid=giphy.gif&ct=g",
         "number_in_bag": 0,
         "price": 100,
-        "lineage": {
-            "Afghanistan": "AF",
-            "Brazil": "BR",
-            "Colombia": "CO",
-            "India": "IN",
-            "Mexico": "MX",
-            "Thailand": "TH",
-            "Ukraine": "UA"
-        }
+        "lineage": "From: Ukraine x Colombia x Brazil"
        
     },
     {
         "name": "My Friend Jack",
-        "image": "https://www.cannabisreports.com/images/strains/no_image.png",
+
+        "image": "https://media0.giphy.com/media/l0NhWHih7x5dpqesw/giphy.gif?cid=ecf05e47r4ztq76do51h6qnhg2i56eom5xdfq5wfyi5ja0ca&rid=giphy.gif&ct=g",
         "number_in_bag": 0,
         "price": 100,
-        "lineage": {
-            "Afghanistan": "AF"
-        }
+        "lineage": "From: Afghanistan"
        
     },
     {
         "name": "Sour Cat",
-        "image": "https://www.cannabisreports.com/images/strains/no_image.png",
+        "image": "https://i.giphy.com/media/gX2NAgKI2HeoM/giphy.webp",
         "number_in_bag": 0,
         "price": 100,
-        "lineage": {
-            "Afghanistan": "AF",
-            "Mexico": "MX",
-            "United States": "US"
-        }
-        
+        "lineage": "From: United States x Mexico"
     }
 ]
 
