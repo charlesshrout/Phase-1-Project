@@ -2,17 +2,17 @@
 "data": [
     {
         "name": "Dirty Cookies",
+
         "image": "./Assets/dirty cookies .jpeg",
         "number_in_bag": 0,
         "price": 100,
-        "lineage": {
-            "Afghanistan": "AF",
-            "South Africa": "ZA"
-        }
+        "lineage": "From: Afghanistan, South Africa"
+            
         
     },
     {
         "name": "Doctor Cookies",
+
         "image": "./assets/monstor cookies .jpeg",
         "number_in_bag": 0,
         "price": 100,

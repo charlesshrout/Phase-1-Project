@@ -4,41 +4,36 @@ const strainDescription = document.querySelector("#strain-description");
 const strainPrice = document.querySelector("#strain-price");
 const numberInCart = document.querySelector("#strain-in-cart");
 const menu = document.getElementById("strain-items")
+const strainLineage = document.getElementById("strain-description")
 let currentStrain;
+let localArray;
 
 const fetchReq1 = fetch ("http://localhost:3000/data")
 .then(res => res.json())
+.then(strainArray => {
+    strainArray.forEach(strain => {
+        buildMenu(strain)
+    })
+})
 
 
-const fetchReq2 = fetch("https://api.otreeba.com/v1/strains?count=5")
-.then(response => response.json())
 
-const allData = Promise.all([fetchReq1, fetchReq2])
 
-const newData = []
 
-function sliceData(allData){
-    newData.push(allData.slice(0))
-}
-console.log(newData)
-
-function buildMenu(strainObj){
+function buildMenu(strain){
     const span = document.createElement('span')
-    span.addEventListener('click', () => strainAPI(strainObj),
-   strainDetails(localObj) )
-    span.textContent = strainObj.name
+    span.addEventListener('click', () => 
+    strainDetails(strain))
+    span.textContent = strain.name
     menu.append(span)
 }
 
-function strainAPI(strainObj) {
-    strainName.textContent = strainObj.name;
-}
-
-function strainDetails(localObj){
-    strainImage.src = localObj.image
-    strainDescription.textContent = localObj.lineage.value
-    strainPrice.textContent = `$${(localObj.price) + "per Oz"}`
-    numberInCart.textContent = localObj.number_in_bag
+function strainDetails(strain){
+    strainName.textContent = strain.name
+    strainLineage.textContent = strain.lineage
+    strainImage.src = strain.image
+    strainPrice.textContent = `$${(strain.price) + " per Oz"}`
+    numberInCart.textContent = strain.number_in_bag
 
 }
 
