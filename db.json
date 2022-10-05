@@ -16,16 +16,8 @@
         "image": "./assets/monstor cookies .jpeg",
         "number_in_bag": 0,
         "price": 100,
-        "lineage": {
-            "Afghanistan": "AF",
-            "Colombia": "CO",
-            "India": "IN",
-            "Mexico": "MX",
-            "South Africa": "ZA",
-            "Thailand": "TH",
-            "United States": "US"
-        }
-       
+        "lineage": "From: "
+            
     },
     {
         "name": "Electric Mayhem",
