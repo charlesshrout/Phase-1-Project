@@ -13,6 +13,7 @@ html, body {
     padding: 0;
     font-family: 'Questrial', sans-serif;
     
+    
 }
 
 header {
@@ -24,11 +25,14 @@ header {
     justify-content: center;
     align-items: center;
     background: rgb(0, 0, 0);
+    animation: shake .3s infinite alternate;
+
 }
 
 header img {
     height: 60px;
     width: auto;
+
 }
 
 #menu {
@@ -38,21 +42,25 @@ header img {
     margin-top: 20px;
     display:block;
     color:rgb(255, 255, 255)
+    
 }
 
 #menu h2 {
     font-size: 3em;
+    
 }
 
 #container {
     display:flex;
     height:100%;
+    
 }
 
 #menu span {
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
+    animation: beat .3s infinite alternate;
 }
 
 #menu span:not(:last-child) { 
@@ -65,7 +73,7 @@ header img {
 }
 
 #menu span:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(25, 249, 0);
     cursor: pointer;
 }
 
@@ -75,26 +83,19 @@ header img {
 }
 
 #strain-text {
-    text-align: center;
-    position: center;
-    top: 15px;
+    background: linear-gradient(to bottom right, yellow, green);
+    box-shadow: 8px 8px 10px 0px deeppink, -5px -5px 5px 0px blue,
+      5px 5px 15px 0px yellow;
+    padding: 0em 1em;
+    border-radius: 16px;
+    border-style: solid;
     margin-left: 10px;
-    margin-top: 10px;
-    padding: 10px;
-    width: 90%;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 1rem;
-    border: 1px solid rgba(59,58,58,0.46);
-    border-radius: 20px;
-    box-shadow: -10px 5px 10px;
-    top: 0;
-    transition: top ease 0.5s;
+    font: 19px sans-serif;
+    line-height: 2;
+    width: 80%;
+    text-shadow: red -2px 0,
+    cyan 2px 0;
+
 }
 
 #strain-name {
@@ -113,8 +114,8 @@ header img {
     font-weight: bold;
     font-size: 3rem;
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 385px;
+    height: 385px;
     background-color: aliceblue;
     border: 1px solid rgba(59,58,58,0.46);
     border-radius: 20px;
@@ -132,7 +133,7 @@ header img {
 input[type=submit] {
     border:0px;
     margin: auto;
-    background:rgb(255, 255, 255);
+    background:rgb(254, 254, 254);
     font-size: 1em;
     border: 1px solid rgb(252, 250, 250);
     margin-left: 10px;
@@ -158,3 +159,64 @@ form {
     display:flex;
     height: 30px;
 }
+
+
+#cart-amount {
+    background: linear-gradient(to bottom right, yellow, green);
+    box-shadow: 8px 8px 10px 0px deeppink, -5px -5px 5px 0px blue,
+      5px 5px 15px 0px yellow;
+    padding: 0em 1em;
+    border-radius: 16px;
+    border-style: solid;
+    margin-left: 10px;
+    font: 19px sans-serif;
+    line-height: 2;
+    font-size: medium;
+    vertical-align: middle;
+    
+}
+
+
+.heart {
+    color: #e00;
+    font-size: 8rem;
+    transform-origin: left;
+    animation: beat .3s infinite alternate;
+}
+
+@keyframes beat {
+    to {transform: scale(1.2);}
+}
+
+@keyframes shake {
+        25% {transform: translateX(4px)}
+        50% {transform: translateX(-4px)}
+        75% {transform: translateX(4px)}
+}
+
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+.strains{
+  display: list-item;    
+ } 
