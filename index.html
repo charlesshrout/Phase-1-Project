@@ -33,19 +33,29 @@
                 <h3>
                     Number in Cart: 
                     <span id="strain-in-cart">0</span>
+                    <button id="clear">Clear Cart</button>
                 </h3>
                 <form id="cart-form">
                     <input id="cart-amount" type="text" placeholder="Number to add..."/>
                     <input type="submit" value="Add to Cart"></input>
                     
                 </form>
-                
             </section>
         </div>
     <div class="heart">
         &#x2665;
     </div>
-        
+    <div class="search-wrapper">
+        <label for="search">Search Strains</label>
+        <input type="search" id="search" data-search>
+      </div>
+      <div class="user-cards" data-user-cards-container></div>
+      <template data-user-template>
+        <div class="card">
+          <div class="header" data-header></div>
+          <div class="body" data-body></div>
+        </div>
+      </template>
     </body>
     
-</html>
+</html>  

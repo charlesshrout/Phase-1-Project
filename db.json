@@ -5,8 +5,10 @@
 
         "image": "https://media2.giphy.com/media/ZyljOaa1h8CtO/giphy.gif?cid=790b76111ec0be013e868f4844551560a5139122e83ec11f&rid=giphy.gif&ct=g",
         "number_in_bag": 0,
-        "price": 100,
-        "lineage": "From: Afghanistan x South Africa"
+        "price": 160,
+        "lineage": "From: Afghanistan x South Africa",
+        "genetics": "White Fire OG x Herijuana x Girl Scout Cookies"
+
             
         
     },
@@ -15,8 +17,9 @@
 
         "image": "https://media4.giphy.com/media/l4FGjieS6tO8LZw1W/giphy.gif?cid=ecf05e47cetwabeohpjit0h7uc757vnt0iad6r0i31aaa05o&rid=giphy.gif&ct=g",
         "number_in_bag": 0,
-        "price": 100,
-        "lineage": "From: India x South Africa"
+        "price": 9000,
+        "lineage": "From: India x South Africa",
+        "genetics": "Forum Girl Scout Cookies x CBD MediHaze"
             
     },
     {
@@ -24,8 +27,9 @@
 
         "image": "https://media1.giphy.com/media/26xBzhls2a4Gw9U6Q/giphy.gif?cid=ecf05e476f8d6w42w6o3hpsizbu7zgjrpsnx55qrq5k2tpbw&rid=giphy.gif&ct=g",
         "number_in_bag": 0,
-        "price": 100,
-        "lineage": "From: Ukraine x Colombia x Brazil"
+        "price": 300,
+        "lineage": "From: Ukraine x Colombia x Brazil",
+        "genetics": "Grandaddy Purple x Green Crack"
        
     },
     {
@@ -33,16 +37,18 @@
 
         "image": "https://media0.giphy.com/media/l0NhWHih7x5dpqesw/giphy.gif?cid=ecf05e47r4ztq76do51h6qnhg2i56eom5xdfq5wfyi5ja0ca&rid=giphy.gif&ct=g",
         "number_in_bag": 0,
-        "price": 100,
-        "lineage": "From: Afghanistan"
+        "price": 20,
+        "lineage": "From: Afghanistan",
+        "genetics": "G-13 x White Widow"
        
     },
     {
         "name": "Sour Cat",
         "image": "https://i.giphy.com/media/gX2NAgKI2HeoM/giphy.webp",
         "number_in_bag": 0,
-        "price": 100,
-        "lineage": "From: United States x Mexico"
+        "price": 120,
+        "lineage": "From: United States x Mexico",
+        "genetics": "Sour Lemon OG x Cannatonic"
     }
 ]
 

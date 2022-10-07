@@ -44,3 +44,43 @@ function setupCart() {
         addToCartForm.reset();
     });
 }
+
+const reset = function() {
+    
+        document.getElementById('strain-in-cart').innerHTML = 0;
+        currentStrain.number_in_bag = 0;
+}
+
+const resetButton = document.querySelector("#clear");
+
+resetButton.addEventListener("click", function() {
+    reset();
+})
+
+const userCardTemplate = document.querySelector("[data-user-template]")
+const userCardContainer = document.querySelector("[data-user-cards-container]")
+const searchInput = document.querySelector("[data-search]")
+
+let apiStrains = []
+
+searchInput.addEventListener("input", e => {
+  const value = e.target.value.toLowerCase()
+  apiStrains.forEach(weedStrain => {
+    const isVisible =
+      weedStrain.name.toLowerCase().includes(value) ||
+      weedStrain.genetics.toLowerCase().includes(value)
+      weedStrain.element.classList.toggle("hide", !isVisible)
+  })
+})
+
+fetch("http://localhost:3000/data")
+  .then(res => res.json())
+  .then(data => {
+    weedStrain = data.map(strainW => {
+      const card = userCardTemplate.content.cloneNode(true).children[0]
+      const header = card.querySelector("[data-header]")
+      const body = card.querySelector("[data-body]")
+      header.textContent = strainW.name
+      body.textContent = strainW.genetics
+      userCardContainer.append(card)
+      return  `name: ${strainW.name}`, `genetics: ${strainW.genetics}`, `element: ${card}`})})

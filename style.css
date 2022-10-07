@@ -198,25 +198,90 @@ form {
     margin-left: 15%;
     padding:15px;
     border-radius: 10px;
+    
   }
 
   input[type=text] {
      width: 30%;
      -webkit-transition: width 0.15s ease-in-out;
      transition: width 0.15s ease-in-out;
+     
   }
 
   /* When the input field gets focus,
        change its width to 100% */
   input[type=text]:focus {
     width: 70%;
+    
   }
 
  #list{
    font-size:  1.5em;
    margin-left: 90px;
+   
   }
 
 .strains{
   display: list-item;    
  } 
+
+ .search-wrapper {
+    background: linear-gradient(to bottom right, yellow, green);
+    box-shadow: 8px 8px 10px 0px deeppink, -5px -5px 5px 0px blue,
+      5px 5px 15px 0px yellow;
+    padding: 0em 1em;
+    border-radius: 16px;
+    border-style: solid;
+    margin-left: 10px;
+    font: 19px sans-serif;
+    line-height: 2;
+    width: 80%;
+    text-shadow: red -2px 0,
+    cyan 2px 0;
+    
+    
+  }
+  
+  input {
+    font-size: 1rem;
+  }
+  
+  .user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+    background: linear-gradient(to bottom right, yellow, green);
+    box-shadow: 8px 8px 10px 0px deeppink, -5px -5px 5px 0px blue,
+      5px 5px 15px 0px yellow;
+    padding: 0em 1em;
+    border-radius: 16px;
+    border-style: solid;
+    margin-left: 10px;
+    font: 19px sans-serif;
+    line-height: 2;
+    width: 80%;
+    text-size-adjust: 15px
+
+    cyan 2px 0;
+  }
+  
+  .card {
+    border: 1px solid black;
+    background-color: white;
+    padding: .5rem;
+    
+  }
+  
+  .card > .header {
+    margin-bottom: .25rem;
+  }
+  
+  .card > .body {
+    font-size: .8rem;
+    color: #777;
+  }
+  
+  .hide {
+    display: none;
+  }
